@@ -1,0 +1,8 @@
+tags: 
+	- hashes
+	- nested hashes
+	- repl
+language: 
+	- ruby
+resources: 
+	- 0
