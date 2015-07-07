@@ -24,7 +24,7 @@ In the above example, each key points to an array of names. Nested hashes can ge
 
 You're 16 years old and back in high school english class. Luckily for us, our teacher is kind of lazy and we get to watch the Romeo and Juliet movie from the '90s with Leonardo DiCaprio and Claire Danes. 
 
-![](http://scalar.usc.edu/works/romeo-and-juliet-act-2-scene-2-through-the-years/media/RomeoandJuliet5.jpg)
+![](http://readme-pics.s3.amazonaws.com/RomeoandJuliet5.jpg)
 
 *If you have not seen this movie, I would recommend watching it before proceeding with this course or anything else in your life*
 
