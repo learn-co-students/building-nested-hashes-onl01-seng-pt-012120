@@ -18,7 +18,20 @@ flatiron_school = {
 }
 ```
 
-In the above example, each key points to an array of names. Nested hashes can get pretty complicated. You could have a key that points to a value of a hash and that hash can have keys that point to values of still more hashes and so on and so on. You can think of a nested hash as a tree. Let's take a closer look. 
+In the above example, each key points to an array of names. Let's say we wanted to access that array of instructors. We can do it using the same syntax we've used to access the values of hash keys in single-layer hashes. Let's get that instructors array:
+
+```ruby
+flatironschool[:instructors]
+#  => ["Avi", "Jeff", "Rose"]
+``` 
+What if I wanted to grab *just the first name* in the instructor's array? We use the same methods for accessing array index items that we've been using all along: 
+
+```ruby
+flatironschool[:instructors][0]
+#  => "Avi"
+```
+
+Nested hashes can get pretty complicated. You could have a key that points to a value of a hash and that hash can have keys that point to values of still more hashes and so on and so on. You can think of a nested hash as a tree. Let's take a closer look. 
 
 ## Epic Tragedy Example
 
@@ -281,7 +294,7 @@ We're almost done. Our hero and heroine have two friends each. That constitutes 
 
 The values of the `:hero_friends` and `:heroine_friends` keys currently point to empty arrays. Fill out these empty arrays with a series of hashes that will contain key/value pairs describing these friends. 
 
-The hero's two friends are Benvolio and Steven. So, the `:hero_friends` array will contain two hashes. Each of these two hashes have the following three keys: name, age and attitude. The hero's first friend has a name of "Benvolio", an age of "17" and an attitude of "worried". The hero's second friend has a name of "Steven", an age of "30" and an attitude of "confused". 
+The hero's two friends are Benvolio and Steven. So, the `:hero_friends` array will contain two hashes. Each of these two hashes have the following three keys: `:name`, `:age` and `:attitude`. The hero's first friend has a name of "Benvolio", an age of "17" and an attitude of "worried". The hero's second friend has a name of "Steven", an age of "30" and an attitude of "confused". 
 
 The heroine's two friends are Mercutio and Nurse. So, the `:heroine_friends` array will contain two hashes. Each of these two hashes ave the following three keys: name, age and attitude. The heroine's first friend has a name of "Mercutio" an age of "18", and an attitude of "hot-headed". The heroine's second friend has a name of "Nurse" and age of "44" and an attitude of "worried". 
 
