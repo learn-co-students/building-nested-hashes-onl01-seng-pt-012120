@@ -118,7 +118,8 @@ The first level of our nested hash are the keys for the family names, "Montague"
 
 ### Step 1: Family Names
 
-```ruby
+~~~ruby
+
 epic_tragedy = 
 
 
@@ -133,7 +134,8 @@ epic_tragedy = {:montague => {}, :capulet => {}}
 ~~~validation 
 
 expect(response).to.have.all.keys([montague: {}, capulet: {}]);
-```
+
+~~~
 
 %%%
 
@@ -155,7 +157,8 @@ Fill out the empty hash that is the value of the `:montague` key. There are four
 Then, do the same for the empty hash that is the value of the `:capulet` key. This time, your keys are `:patriarch`, `:matriarch`, `:heroine`, `:heroine_friends`. The values are the same as described above. 
 
 
-```ruby
+~~~ruby
+
 epic_tragedy = {
    :montague => {
    #your key/value pairs here
@@ -190,7 +193,7 @@ epic_tragedy = {
 
 expect(response).to.have.all.keys([montague: {patriarch: {}, matriarch: {}, hero: {}, hero_friends:[]}, capulet: {patriarch: {}, matriarch: {}, heroine: {}, heroine_friends:[]}]);
 
-```
+~~~
 
 %%%
 
@@ -226,7 +229,8 @@ Let's fill out the empty hashes that are the values of the `:patriarch`, `:matri
 
 The Capulet patriarch has a name of "Lord Capulet" and an age of "50". The Capulet matriarch has a name of "Lady Capulet" and an age of "51". The Capulet heroine has a name of "Juliette", an age of "15" and a status of "alive".
 
-```ruby
+~~~ruby
+
 epic_tragedy = {
    :montague => {
       :patriarch => {},
@@ -281,7 +285,8 @@ answer = {
 }
 
 expect(response).to.eql(answer);
-```
+
+~~~
 
 %%%
 
@@ -298,7 +303,8 @@ The hero's two friends are Benvolio and Steven. So, the `:hero_friends` array wi
 
 The heroine's two friends are Mercutio and Nurse. So, the `:heroine_friends` array will contain two hashes. Each of these two hashes ave the following three keys: name, age and attitude. The heroine's first friend has a name of "Mercutio" an age of "18", and an attitude of "hot-headed". The heroine's second friend has a name of "Nurse" and age of "44" and an attitude of "worried". 
 
-```ruby
+~~~ruby
+
 epic_tragedy = {
    :montague => {
       :patriarch => {name: "Lord Montague", age: "53"},
@@ -365,7 +371,8 @@ answer = {
 }
 
 expect(response).to.eql(answer);
-```
+
+~~~
 
 ## Bonus: Manipulating the Hash
 
@@ -426,7 +433,8 @@ Now it's your turn:
 
 We're coming to the end of the epic tragedy of Romeo and Juliette. At this point in the story, Romeo and Juliette are (tragically) dead. Use the above method to change the status of our hero, Romeo, and our heroine, Juliette, from "alive", to "dead". 
 
-```ruby
+~~~ruby
+
 epic_tragedy = {
    :montague => {
       :patriarch => {name: "Lord Montague", age: "53"},
@@ -483,6 +491,9 @@ answer = {
 }
 
 expect(response).to.eql(answer);
-```
+
+~~~
+
+%%%
 
 And that's it! In the next lab, you'll be building your own nested hashes. Have fun!
