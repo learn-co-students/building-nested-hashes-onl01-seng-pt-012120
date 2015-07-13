@@ -1,8 +1,6 @@
 tags: 
   - hashes
   - nested hashes
-  - repl
 languages: 
   - ruby
-resources: 
-  - 0
+resources: 0
