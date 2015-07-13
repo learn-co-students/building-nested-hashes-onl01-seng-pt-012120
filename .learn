@@ -2,7 +2,7 @@ tags:
   - hashes
   - nested hashes
   - repl
-language: 
+languages: 
   - ruby
 resources: 
   - 0
