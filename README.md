@@ -107,6 +107,11 @@ epic_tragedy = {
 }
 ```
 
+**Notes:**
+
+* You might notice that we are storing ages as strings. That is because the ages here are not numbers that we need to frequently do math with. If a hash value was a number, let's say the price of an item, that we needed to manipulate, let's say calcuate the tax on, then we would store it as an integer. Otherwise, it is conventional to store information like a person's age as a string.
+* Remember that the `key: value` syntax is the same as the `:key => value` syntax used above. Get ready to see them both used in different applications and sources. 
+
 ### Instructions
 
 This is a complicated data structure, so we're going to build it up one step at a time. In the upcoming code along challenge, we'll be stepping through the lab, one test at a time. Start by forking and cloning this lab. Then follow along with the walk-through below. 
