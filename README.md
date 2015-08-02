@@ -51,7 +51,7 @@ What we have here is a nested data structure. There are different levels or tier
 ```ruby
 
 epic_tragedy = {
-  :montagues => {
+  :montague => {
     :patriarch => {  
       :name => "Lord Montague", 
       :age => "53"
@@ -77,7 +77,7 @@ epic_tragedy = {
       }
     ]
   },
-  :capulets => {
+  :capulet => {
     :patriarch => {
       :name => "Lord Capulet", 
       :age => "50"
