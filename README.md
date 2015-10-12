@@ -127,7 +127,10 @@ In `lib/first_challenge.rb`, you're going to fill out the content of the `epic_t
 At this point, we have a hash that looks like this: 
 
 ```ruby
-epic_tragedy = {:montague => {}, :capulet => {}}
+epic_tragedy = {
+  :montague => {},
+  :capulet => {}
+}
 ```
 
 Now it's time to fill out the second level of our hash—the collection of data that constitutes the value hashes of each family name key. 
