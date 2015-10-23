@@ -2,9 +2,8 @@
 
 ## Objectives
 
-1. Learn the usefulness of nested hashes.
-2. Build a nested hash.
-3. Access and manipulate data in nested hashes.
+1. Build a nested hash.
+2. Access and manipulate data in nested hashes.
 
 ## Code Along Challenge: Epic Tragedy
 
@@ -200,12 +199,11 @@ epic_tragedy = {
 ```
 We're almost done. Our hero and heroine have two friends each. That constitutes a collection of friends. Since they each have a collection of friends, it makes sense to collect those friends in an array. Since each friend will have his or her own attributes (name, age, etc), our array will be *an array of hashes*!
 
-
-%%%
-
 ### Code Along Challenge IV: Nesting Friends and Attributes
 
-The values of the `:hero_friends` and `:heroine_friends` keys currently point to empty arrays. Fill out these empty arrays with a series of hashes that will contain key/value pairs describing these friends. 
+The values of the `:hero_friends` and `:heroine_friends` keys currently point to empty arrays. Why arrays? Well, we know that an individual person can be represented by a hash. However, our hero and heroine have multiple friends. So, we need a way to store there friends in list-form. Luckily for us, that's just what arrays are for. 
+
+Fill out these empty arrays with a series of hashes that will contain key/value pairs describing these friends. 
 
 The hero's two friends are Benvolio and Steven. So, the `:hero_friends` array will contain two hashes. Each of these two hashes have the following three keys: 
 
