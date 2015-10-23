@@ -6,33 +6,6 @@
 2. Build a nested hash.
 3. Access and manipulate data in nested hashes.
 
-## Introduction
-
-So far, we've seen hashes that store values in associated keys. In the hashes we've built up until now, each key points to a single value. Hashes are so useful, however, because they can be multi-dimensional, or nested. A key in a hash can point to a value that is a *collection of objects*, i.e. an array or even another hash. Let's take a look: 
-
-```ruby
-flatiron_school = {
-  instructors: ["Avi", "Jeff", "Rose"], 
-  dev_team: ["Jonas", "Yeti", "Seiji"],
-  students: ["Sarah", "you", "John", "David"]
-}
-```
-
-In the above example, each key points to an array of names. Let's say we wanted to access that array of instructors. We can do it using the same syntax we've used to access the values of hash keys in single-layer hashes. Let's get the `:instructors` array:
-
-```ruby
-flatironschool[:instructors]
-#  => ["Avi", "Jeff", "Rose"]
-``` 
-What if I wanted to grab *just the first name* in the instructor's array? We use the same methods for accessing array index items that we've been using all along: 
-
-```ruby
-flatironschool[:instructors][0]
-#  => "Avi"
-```
-
-Nested hashes can get pretty complicated. You could have a key that points to a value of a hash and that hash can have keys that point to values of still more hashes and so on and so on. You can think of a nested hash as a tree. Let's take a closer look. 
-
 ## Code Along Challenge: Epic Tragedy
 
 You're 16 years old and back in high school english class. Luckily for us, our teacher is kind of lazy and we get to watch the *Romeo and Juliet* movie from the '90s starring Leonardo DiCaprio and Claire Danes. 
