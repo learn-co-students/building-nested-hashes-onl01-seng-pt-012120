@@ -2,36 +2,8 @@
 
 ## Objectives
 
-1. Learn the usefulness of nested hashes.
-2. Build a nested hash.
-3. Access and manipulate data in nested hashes.
-
-## Introduction
-
-So far, we've seen hashes that store values in associated keys. In the hashes we've built up until now, each key points to a single value. Hashes are so useful, however, because they can be multi-dimensional, or nested. A key in a hash can point to a value that is a *collection of objects*, i.e. an array or even another hash. Let's take a look: 
-
-```ruby
-flatiron_school = {
-  instructors: ["Avi", "Jeff", "Rose"], 
-  dev_team: ["Jonas", "Yeti", "Seiji"],
-  students: ["Sarah", "you", "John", "David"]
-}
-```
-
-In the above example, each key points to an array of names. Let's say we wanted to access that array of instructors. We can do it using the same syntax we've used to access the values of hash keys in single-layer hashes. Let's get the `:instructors` array:
-
-```ruby
-flatironschool[:instructors]
-#  => ["Avi", "Jeff", "Rose"]
-``` 
-What if I wanted to grab *just the first name* in the instructor's array? We use the same methods for accessing array index items that we've been using all along: 
-
-```ruby
-flatironschool[:instructors][0]
-#  => "Avi"
-```
-
-Nested hashes can get pretty complicated. You could have a key that points to a value of a hash and that hash can have keys that point to values of still more hashes and so on and so on. You can think of a nested hash as a tree. Let's take a closer look. 
+1. Build a nested hash.
+2. Access and manipulate data in nested hashes.
 
 ## Code Along Challenge: Epic Tragedy
 
@@ -227,12 +199,11 @@ epic_tragedy = {
 ```
 We're almost done. Our hero and heroine have two friends each. That constitutes a collection of friends. Since they each have a collection of friends, it makes sense to collect those friends in an array. Since each friend will have his or her own attributes (name, age, etc), our array will be *an array of hashes*!
 
-
-%%%
-
 ### Code Along Challenge IV: Nesting Friends and Attributes
 
-The values of the `:hero_friends` and `:heroine_friends` keys currently point to empty arrays. Fill out these empty arrays with a series of hashes that will contain key/value pairs describing these friends. 
+The values of the `:hero_friends` and `:heroine_friends` keys currently point to empty arrays. Why arrays? Well, we know that an individual person can be represented by a hash. However, our hero and heroine have multiple friends. So, we need a way to store there friends in list-form. Luckily for us, that's just what arrays are for. Before introducing the concept of hashes, and we told you to make a list of friends what data structure would you reach for? You'd reach for an array!
+
+Fill out these empty arrays with a series of hashes that will contain key/value pairs describing these friends. 
 
 The hero's two friends are Benvolio and Steven. So, the `:hero_friends` array will contain two hashes. Each of these two hashes have the following three keys: 
 
@@ -349,4 +320,4 @@ puts epic_tragedy
 
 ### Bonus Code Along Challenge
 
-In `lib/bonus.rb` you'll see our completed `epic_tragedy hash`. We're coming to the end of the epic tragedy of Romeo and Juliet. At this point in the story, Romeo and Juliet are—as in every good tragedy—quite dead. Use the above method to change the status of our hero Romeo and our heroine Juliet from "alive" to "dead".
+In `lib/bonus.rb` you'll see our completed `epic_tragedy hash`. We're coming to the end of the epic tragedy of Romeo and Juliet. At this point in the story, Romeo and Juliet are—as in every good tragedy—quite dead. Use the above method to change the status of our hero Romeo and our heroine Juliet from "alive" to "dead". These are bonus and if you're feeling comfortable with Hashes, feel free to move forward. Also! to enable these tests make sure to remove the `x` in front of the `it` block near the bottom.
