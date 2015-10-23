@@ -201,7 +201,7 @@ We're almost done. Our hero and heroine have two friends each. That constitutes 
 
 ### Code Along Challenge IV: Nesting Friends and Attributes
 
-The values of the `:hero_friends` and `:heroine_friends` keys currently point to empty arrays. Why arrays? Well, we know that an individual person can be represented by a hash. However, our hero and heroine have multiple friends. So, we need a way to store there friends in list-form. Luckily for us, that's just what arrays are for. 
+The values of the `:hero_friends` and `:heroine_friends` keys currently point to empty arrays. Why arrays? Well, we know that an individual person can be represented by a hash. However, our hero and heroine have multiple friends. So, we need a way to store there friends in list-form. Luckily for us, that's just what arrays are for. Before introducing the concept of hashes, and we told you to make a list of friends what data structure would you reach for? You'd reach for an array!
 
 Fill out these empty arrays with a series of hashes that will contain key/value pairs describing these friends. 
 
