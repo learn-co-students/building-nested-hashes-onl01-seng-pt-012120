@@ -7,18 +7,16 @@
 
 ## Code Along Challenge: Epic Tragedy
 
-You're 16 years old and back in high school english class. Luckily for us, our teacher is kind of lazy and we get to watch the *Romeo and Juliet* movie from the '90s starring Leonardo DiCaprio and Claire Danes. 
+You're 16 years old and back in high school English class. Luckily for us, our teacher is kind of lazy and we get to watch the *Romeo and Juliet* movie from the '90s starring Leonardo DiCaprio and Claire Danes. 
 
 ![](http://readme-pics.s3.amazonaws.com/RomeoandJuliet5.jpg)
 
-*If you have not seen this movie, I would recommend watching it before proceeding with this course or anything else in your life!*
-
-We need to get ready for the Romeo and Juliet quiz our teacher has scheduled for us. We will definitely be required to answer some questions on the cast of characters and their attributes and relationships to one another. Let's map out that information: 
+But there's a Romeo and Juliet quiz our teacher has scheduled for us that we need to get ready for. We will definitely be required to answer some questions on the cast of characters and their attributes and relationships to one another. Let's map out that information: 
 
 
 ![](http://readme-pics.s3.amazonaws.com/hash_intro_shakespeare%20(2).png)
 
-What we have here is a nested data structure. There are different levels or tiers of information. On the top tier, we have the family names, beneath that we have key characters, and beneath that we have their attributes. We have an additional layer on the hero/heroine's friends because there are multiple friends. Now that we have a sense of the structure that our collection of information is taking, we're going to build a nested hash that displays it in the same nested way. Our end result will look like this: 
+What we have here is a nested data structure. There are different levels or tiers of information. On the top tier, we have the family names. Beneath that we have key characters, and beneath that we have their attributes. We have an additional layer of the hero/heroine's friends because there are multiple friends. Now that we have a sense of the structure that our collection of information is taking, we're going to build a nested hash that displays it in the same nested way. Our end result will look like this: 
 
 ```ruby
 
@@ -81,7 +79,7 @@ epic_tragedy = {
 
 **Notes:**
 
-* You might notice that we are storing ages as strings. That is because the ages here are not numbers that we need to frequently do math with. If a hash value was a number, let's say the price of an item, that we needed to manipulate, let's say calcuate the tax on, then we would store it as an integer. Otherwise, it is conventional to store information like a person's age as a string.
+* You might notice that we are storing ages as strings. That is because the ages here are not numbers that we need to frequently do math with. If a hash value was a number that we needed to manipulate, then we would store it as an integer. For example, if it was the price of an item that we need to calculate the tax on, then the price would be stored as an integer. Otherwise, it is conventional to store information like a person's age as a string.
 * Remember that the `key: value` syntax is the same as the `:key => value` syntax used above. Get ready to see them both used in different applications and sources. 
 
 ### Instructions
