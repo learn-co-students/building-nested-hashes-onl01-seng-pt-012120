@@ -172,7 +172,7 @@ In `lib/third_challenge`, you'll find the hash that you built in the previous ch
   * a `:name` of "Lady Capulet" and 
   * an `:age` of "51". 
 * The Capulet `:heroine` has 
-  * a `:name` of "Juliette", 
+  * a `:name` of "Juliet", 
   * an `:age` of "15", and 
   * a `:status` of "alive".
 
@@ -189,7 +189,7 @@ epic_tragedy = {
    :capulet => {
       :patriarch => {name: "Lord Capulet", age: "50"},
       :matriarch => {name: "Lady Capulet", age: "51"},
-      :heroine => {name: "Juliette", age: "15", status: "alive"},
+      :heroine => {name: "Juliet", age: "15", status: "alive"},
       :heroine_friends => []
    }
 }
@@ -255,7 +255,7 @@ epic_tragedy = {
    :capulet => {
       :patriarch => {name: "Lord Capulet", age: "50"},
       :matriarch => {name: "Lady Capulet", age: "51"},
-      :heroine => {name: "Juliette", age: "15", status: "alive"},
+      :heroine => {name: "Juliet", age: "15", status: "alive"},
       :heroine_friends => [
           {name: "Mercutio", age: "18", attitude: "hot-headed"}, 
           {name: "Nurse", age: "44", attitude: "worried"}
@@ -307,7 +307,7 @@ puts epic_tragedy
    :capulet => {
       :patriarch => {name: "Lord Capulet", age: "50"},
       :matriarch => {name: "Lady Capulet", age: "51"},
-      :heroine => {name: "Juliette", age: "15", status: "alive"},
+      :heroine => {name: "Juliet", age: "15", status: "alive"},
       :heroine_friends => [
           {name: "Mercutio", age: "18", attitude: "hot-headed"}, 
           {name: "Nurse", age: "44", attitude: "worried"}
