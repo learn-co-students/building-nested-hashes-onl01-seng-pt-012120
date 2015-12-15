@@ -2,51 +2,21 @@
 
 ## Objectives
 
-1. Learn the usefulness of nested hashes.
-2. Build a nested hash.
-3. Access and manipulate data in nested hashes.
-
-## Introduction
-
-So far, we've seen hashes that store values in associated keys. In the hashes we've built up until now, each key points to a single value. Hashes are so useful, however, because they can be multi-dimensional, or nested. A key in a hash can point to a value that is a *collection of objects*, i.e. an array or even another hash. Let's take a look: 
-
-```ruby
-flatiron_school = {
-  instructors: ["Avi", "Jeff", "Rose"], 
-  dev_team: ["Jonas", "Yeti", "Seiji"],
-  students: ["Sarah", "you", "John", "David"]
-}
-```
-
-In the above example, each key points to an array of names. Let's say we wanted to access that array of instructors. We can do it using the same syntax we've used to access the values of hash keys in single-layer hashes. Let's get the `:instructors` array:
-
-```ruby
-flatironschool[:instructors]
-#  => ["Avi", "Jeff", "Rose"]
-``` 
-What if I wanted to grab *just the first name* in the instructor's array? We use the same methods for accessing array index items that we've been using all along: 
-
-```ruby
-flatironschool[:instructors][0]
-#  => "Avi"
-```
-
-Nested hashes can get pretty complicated. You could have a key that points to a value of a hash and that hash can have keys that point to values of still more hashes and so on and so on. You can think of a nested hash as a tree. Let's take a closer look. 
+1. Build a nested hash.
+2. Access and manipulate data in nested hashes.
 
 ## Code Along Challenge: Epic Tragedy
 
-You're 16 years old and back in high school english class. Luckily for us, our teacher is kind of lazy and we get to watch the *Romeo and Juliet* movie from the '90s starring Leonardo DiCaprio and Claire Danes. 
+You're 16 years old and back in high school English class. Luckily for us, our teacher is kind of lazy and we get to watch the *Romeo and Juliet* movie from the '90s starring Leonardo DiCaprio and Claire Danes. 
 
 ![](http://readme-pics.s3.amazonaws.com/RomeoandJuliet5.jpg)
 
-*If you have not seen this movie, I would recommend watching it before proceeding with this course or anything else in your life!*
-
-We need to get ready for the Romeo and Juliet quiz our teacher has scheduled for us. We will definitely be required to answer some questions on the cast of characters and their attributes and relationships to one another. Let's map out that information: 
+But there's a Romeo and Juliet quiz our teacher has scheduled for us that we need to get ready for. We will definitely be required to answer some questions on the cast of characters and their attributes and relationships to one another. Let's map out that information: 
 
 
 ![](http://readme-pics.s3.amazonaws.com/hash_intro_shakespeare%20(2).png)
 
-What we have here is a nested data structure. There are different levels or tiers of information. On the top tier, we have the family names, beneath that we have key characters, and beneath that we have their attributes. We have an additional layer on the hero/heroine's friends because there are multiple friends. Now that we have a sense of the structure that our collection of information is taking, we're going to build a nested hash that displays it in the same nested way. Our end result will look like this: 
+What we have here is a nested data structure. There are different levels or tiers of information. On the top tier, we have the family names. Beneath that we have key characters, and beneath that we have their attributes. We have an additional layer of the hero/heroine's friends because there are multiple friends. Now that we have a sense of the structure that our collection of information is taking, we're going to build a nested hash that displays it in the same nested way. Our end result will look like this: 
 
 ```ruby
 
@@ -109,7 +79,7 @@ epic_tragedy = {
 
 **Notes:**
 
-* You might notice that we are storing ages as strings. That is because the ages here are not numbers that we need to frequently do math with. If a hash value was a number, let's say the price of an item, that we needed to manipulate, let's say calcuate the tax on, then we would store it as an integer. Otherwise, it is conventional to store information like a person's age as a string.
+* You might notice that we are storing ages as strings. That is because the ages here are not numbers that we need to frequently do math with. If a hash value was a number that we needed to manipulate, then we would store it as an integer. For example, if it was the price of an item that we need to calculate the tax on, then the price would be stored as an integer. Otherwise, it is conventional to store information like a person's age as a string.
 * Remember that the `key: value` syntax is the same as the `:key => value` syntax used above. Get ready to see them both used in different applications and sources. 
 
 ### Instructions
@@ -127,7 +97,10 @@ In `lib/first_challenge.rb`, you're going to fill out the content of the `epic_t
 At this point, we have a hash that looks like this: 
 
 ```ruby
-epic_tragedy = {:montague => {}, :capulet => {}}
+epic_tragedy = {
+  :montague => {},
+  :capulet => {}
+}
 ```
 
 Now it's time to fill out the second level of our hash—the collection of data that constitutes the value hashes of each family name key. 
@@ -199,7 +172,7 @@ In `lib/third_challenge`, you'll find the hash that you built in the previous ch
   * a `:name` of "Lady Capulet" and 
   * an `:age` of "51". 
 * The Capulet `:heroine` has 
-  * a `:name` of "Juliette", 
+  * a `:name` of "Juliet", 
   * an `:age` of "15", and 
   * a `:status` of "alive".
 
@@ -216,7 +189,7 @@ epic_tragedy = {
    :capulet => {
       :patriarch => {name: "Lord Capulet", age: "50"},
       :matriarch => {name: "Lady Capulet", age: "51"},
-      :heroine => {name: "Juliette", age: "15", status: "alive"},
+      :heroine => {name: "Juliet", age: "15", status: "alive"},
       :heroine_friends => []
    }
 }
@@ -224,12 +197,11 @@ epic_tragedy = {
 ```
 We're almost done. Our hero and heroine have two friends each. That constitutes a collection of friends. Since they each have a collection of friends, it makes sense to collect those friends in an array. Since each friend will have his or her own attributes (name, age, etc), our array will be *an array of hashes*!
 
-
-%%%
-
 ### Code Along Challenge IV: Nesting Friends and Attributes
 
-The values of the `:hero_friends` and `:heroine_friends` keys currently point to empty arrays. Fill out these empty arrays with a series of hashes that will contain key/value pairs describing these friends. 
+The values of the `:hero_friends` and `:heroine_friends` keys currently point to empty arrays. Why arrays? Well, we know that an individual person can be represented by a hash. However, our hero and heroine have multiple friends. So, we need a way to store there friends in list-form. Luckily for us, that's just what arrays are for. Before introducing the concept of hashes, if we told you to make a list of friends what data structure would you reach for? You'd reach for an array!
+
+Fill out these empty arrays with a series of hashes that will contain key/value pairs describing these friends. 
 
 The hero's two friends are Benvolio and Steven. So, the `:hero_friends` array will contain two hashes. Each of these two hashes have the following three keys: 
 
@@ -283,7 +255,7 @@ epic_tragedy = {
    :capulet => {
       :patriarch => {name: "Lord Capulet", age: "50"},
       :matriarch => {name: "Lady Capulet", age: "51"},
-      :heroine => {name: "Juliette", age: "15", status: "alive"},
+      :heroine => {name: "Juliet", age: "15", status: "alive"},
       :heroine_friends => [
           {name: "Mercutio", age: "18", attitude: "hot-headed"}, 
           {name: "Nurse", age: "44", attitude: "worried"}
@@ -335,7 +307,7 @@ puts epic_tragedy
    :capulet => {
       :patriarch => {name: "Lord Capulet", age: "50"},
       :matriarch => {name: "Lady Capulet", age: "51"},
-      :heroine => {name: "Juliette", age: "15", status: "alive"},
+      :heroine => {name: "Juliet", age: "15", status: "alive"},
       :heroine_friends => [
           {name: "Mercutio", age: "18", attitude: "hot-headed"}, 
           {name: "Nurse", age: "44", attitude: "worried"}
@@ -346,4 +318,4 @@ puts epic_tragedy
 
 ### Bonus Code Along Challenge
 
-In `lib/bonus.rb` you'll see our completed `epic_tragedy hash`. We're coming to the end of the epic tragedy of Romeo and Juliet. At this point in the story, Romeo and Juliet are—as in every good tragedy—quite dead. Use the above method to change the status of our hero Romeo and our heroine Juliet from "alive" to "dead".
+In `lib/bonus.rb` you'll see our completed `epic_tragedy hash`. We're coming to the end of the epic tragedy of Romeo and Juliet. At this point in the story, Romeo and Juliet are—as in every good tragedy—quite dead. Use the above method to change the status of our hero Romeo and our heroine Juliet from "alive" to "dead". These are bonus and if you're feeling comfortable with Hashes, feel free to move forward. Also, to enable these tests make sure to remove the `x` in front of the `it` block in spec/bonus_spec.rb.
