@@ -320,4 +320,4 @@ puts epic_tragedy
 
 In `lib/bonus.rb` you'll see our completed `epic_tragedy hash`. We're coming to the end of the epic tragedy of Romeo and Juliet. At this point in the story, Romeo and Juliet are—as in every good tragedy—quite dead. Use the above method to change the status of our hero Romeo and our heroine Juliet from "alive" to "dead". These are bonus and if you're feeling comfortable with Hashes, feel free to move forward. Also, to enable these tests make sure to remove the `x` in front of the `it` block in spec/bonus_spec.rb.
 
-<a href='https://learn.co/lessons/building-nested-hashes' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/building-nested-hashes' title='Code Along Exercise: Building Nested Hashes'>Code Along Exercise: Building Nested Hashes</a> on Learn.co and start learning to code for free.</p>
