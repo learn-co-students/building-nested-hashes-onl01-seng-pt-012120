@@ -115,9 +115,9 @@ Fill out the empty hash that is the value of the `:montague` key. There are four
 * `:patriarch`
 * `:matriarch`
 * `:hero`
-* `:hero_friends`.
+* `:hero_friends`
 
-The first three of these keys point to a value of any empty hash. The fourth key `:hero_friends` has a value of an empty array.
+The first three of these keys point to a value of an empty hash. The fourth key `:hero_friends` has a value of an empty array.
 
 Then, do the same for the empty hash that is the value of the `:capulet` key. This time, your keys are:
 
