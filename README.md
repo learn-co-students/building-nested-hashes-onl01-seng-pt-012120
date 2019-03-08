@@ -14,7 +14,7 @@ You're 16 years old and back in high school English class. Luckily for us, our t
 But there's a Romeo and Juliet quiz our teacher has scheduled for us that we need to get ready for. We will definitely be required to answer some questions on the cast of characters and their attributes and relationships to one another. Let's map out that information:
 
 
-![](http://learn-co-curriculum.s3.amazonaws.com/nested-hashes-romeo-juliet.png)
+![](http://readme-pics.s3.amazonaws.com/hash_intro_shakespeare%20(2).png)
 
 What we have here is a nested data structure. There are different levels or tiers of information. On the top tier, we have the family names. Beneath that we have key characters, and beneath that we have their attributes. We have an additional layer of the hero/heroine's friends because there are multiple friends. Now that we have a sense of the structure that our collection of information is taking, we're going to build a nested hash that displays it in the same nested way. Our end result will look like this:
 
