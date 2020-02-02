@@ -1,9 +1,6 @@
-epic_tragedy[:montague][:patriarch][:name] = "Michael Jordan"
 
-puts epic_tragedy
-
-#  =>
-{
+def bonus
+epic_tragedy={
    :montague => {
       :patriarch => {name: "Michael Jordan", age: "53"},
       :matriarch => {name: "Lady Montague", age: "54"},
@@ -23,3 +20,7 @@ puts epic_tragedy
       ]
    }
 }
+epic_tragedy[:montague][:hero][:status]='dead'
+epic_tragedy[:capulet][:heroine][:status]='dead'
+epic_tragedy
+end
