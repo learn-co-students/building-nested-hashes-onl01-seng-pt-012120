@@ -42,6 +42,6 @@ puts epic_tragedy
 
 }
 
-  epic_tragedy[:montague][:patriarch][:name] = (dead)
+  epic_tragedy[:montague][:patriarch][:name] = ("dead")
 
 end
